@@ -1,0 +1,26 @@
+// this is a comment
+// all comments and blank lines are ignored
+// this sample scripts show intent layers usage
+
+
+// the number of # in intent definition determines an intent layer
+# tell me about
++ tell me about {thing}
+- {thing} exists
+
+// N times + will enable layer N
+// to enable layer 2
+++
+
+
+// use N times # for layer N
+// this intent is in layer 2, enabled by previous intent
+## tell me more
++ tell me more
++ continue
+- i do not know more
+
+// N times - will disable layer N
+// to disable layer 2
+--
+
