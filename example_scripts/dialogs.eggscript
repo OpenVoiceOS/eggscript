@@ -1,0 +1,41 @@
+// this is a comment
+// all comments and blank lines are ignored
+
+// text after # is the intent name
+# hello world
+// text after + is the user utterance
++ hello world
+// text after - is mycroft's response
+- hello world
+
+
+# weather in location
+// you can capture variables and use them using {var} syntax
++ how is the weather in {location}
+- how am i supposed to know the weather in {location}
+
+
+# weather
+// this will create a intent file with the 3 + utterances
++ what is the weather like
++ how is the weather
++ how does it look outside
+// this will create a dialog file with the 2 - utterances
+- i do not know how to check the weather
+- stick your head ouf of the window and check for yourself
+
+
+# count to 10
++ count to 10
+// if ident level matches its an alternate dialog
+- i will only count to 5
+- i only know how to count to 5
+// use tab for identation
+// each ident level defines a new utterance to be spoken
+    - 1
+        - 2
+            - 3
+                - 4
+                    - 5
+
+

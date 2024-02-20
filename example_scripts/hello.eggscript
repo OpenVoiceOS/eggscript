@@ -1,0 +1,35 @@
+// this is a comment
+// all comments and blank lines are ignored
+// special interperter variables can be set with @var syntax
+// - @name -> skill name
+// - @author -> skill author
+// - @email -> author contact
+// - @license -> skill license
+// - @interpreter -> supported interperter, eg, cli
+// - @compiler -> supported compiler, eg, mycroft skill
+
+@author jarbasai
+@email jarbasai@mailfence.com
+@license MIT
+@name hello world
+@url https://github.com/author/repo
+@version 0.1.0
+
+// this script can be used standalone in the cli
+@interpreter cli
+// a standalone python file can be generated
+@compiler cli
+// a mycroft skill can be generated
+@compiler mycroft
+
+// intent definition
+# hello world
++ hello world
+- hello world
+
+// you can define python code
+```
+hello = "world"
+if hello == "world":
+   print("python code!")
+```
